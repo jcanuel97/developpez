@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE20B962213716F500FFB2D1 /* developpez.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = developpez.entitlements; sourceTree = "<group>"; };
 		FE517BB421359E72004C1A00 /* developpez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = developpez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE517BB721359E72004C1A00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FE517BB821359E72004C1A00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		FE517BB621359E72004C1A00 /* developpez */ = {
 			isa = PBXGroup;
 			children = (
+				FE20B962213716F500FFB2D1 /* developpez.entitlements */,
 				FE517BB721359E72004C1A00 /* AppDelegate.h */,
 				FE517BB821359E72004C1A00 /* AppDelegate.m */,
 				FE517BBA21359E72004C1A00 /* ViewController.h */,
@@ -199,6 +201,11 @@
 				TargetAttributes = {
 					FE517BB321359E72004C1A00 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 					FE517BCB21359E73004C1A00 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -433,7 +440,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = developpez/developpez.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XNJS33B6T;
 				INFOPLIST_FILE = developpez/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,7 +458,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = developpez/developpez.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XNJS33B6T;
 				INFOPLIST_FILE = developpez/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
