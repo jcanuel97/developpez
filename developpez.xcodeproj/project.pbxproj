@@ -15,6 +15,7 @@
 		FE517BC721359E73004C1A00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE517BC621359E73004C1A00 /* main.m */; };
 		FE517BD121359E73004C1A00 /* developpezTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE517BD021359E73004C1A00 /* developpezTests.m */; };
 		FE517BDC21359E73004C1A00 /* developpezUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE517BDB21359E73004C1A00 /* developpezUITests.m */; };
+		FE55CE1B21383A2B00DAA83A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE55CE1A21383A2B00DAA83A /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		FE517BD721359E73004C1A00 /* developpezUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = developpezUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE517BDB21359E73004C1A00 /* developpezUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = developpezUITests.m; sourceTree = "<group>"; };
 		FE517BDD21359E73004C1A00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE55CE1A21383A2B00DAA83A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE20B963213722B900FFB2D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE517BAB21359E72004C1A00 = {
 			isa = PBXGroup;
 			children = (
+				FE55CE1A21383A2B00DAA83A /* Launch Screen.storyboard */,
 				FE517BB621359E72004C1A00 /* developpez */,
 				FE517BCF21359E73004C1A00 /* developpezTests */,
 				FE517BDA21359E73004C1A00 /* developpezUITests */,
 				FE517BB521359E72004C1A00 /* Products */,
+				FE20B963213722B900FFB2D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,14 +207,26 @@
 		FE517BAC21359E72004C1A00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Canuel  Julien";
 				TargetAttributes = {
 					FE517BB321359E72004C1A00 = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+							com.apple.GameCenter.iOS = {
+								enabled = 0;
+							};
 							com.apple.SafariKeychain = {
 								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 0;
 							};
 						};
 					};
@@ -244,6 +267,7 @@
 			files = (
 				FE517BC421359E73004C1A00 /* LaunchScreen.storyboard in Resources */,
 				FE517BC121359E73004C1A00 /* Assets.xcassets in Resources */,
+				FE55CE1B21383A2B00DAA83A /* Launch Screen.storyboard in Resources */,
 				FE517BBF21359E72004C1A00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

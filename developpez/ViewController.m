@@ -23,6 +23,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
 }
 
 
@@ -45,4 +46,5 @@
 - (IBAction)editinChanged:(id)sender {
     [_button setTitle:@"play" forState:UIControlStateNormal];
 }
+
 @end
