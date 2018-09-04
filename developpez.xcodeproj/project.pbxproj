@@ -19,6 +19,7 @@
 		FE5978BB2139C2B300B562E3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5978BA2139C2B300B562E3 /* Media.xcassets */; };
 		FE5978BD213ECE2C00B562E3 /* testmain.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5978BC213ECE2C00B562E3 /* testmain.m */; };
 		FE5978C5213ECEF200B562E3 /* MyUnitsTestDeveloppez.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5978C4213ECEF200B562E3 /* MyUnitsTestDeveloppez.m */; };
+		FE5978CD213EEF4000B562E3 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5978CC213EEF4000B562E3 /* NetworkExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		FE5978C2213ECEF200B562E3 /* MyUnitsTestDeveloppez.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyUnitsTestDeveloppez.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5978C4213ECEF200B562E3 /* MyUnitsTestDeveloppez.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUnitsTestDeveloppez.m; sourceTree = "<group>"; };
 		FE5978C6213ECEF200B562E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE5978CC213EEF4000B562E3 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5978CD213EEF4000B562E3 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +109,7 @@
 		FE20B963213722B900FFB2D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE5978CC213EEF4000B562E3 /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,6 +194,7 @@
 				FE517BB021359E72004C1A00 /* Sources */,
 				FE517BB121359E72004C1A00 /* Frameworks */,
 				FE517BB221359E72004C1A00 /* Resources */,
+				FE5978CE213EF07500B562E3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -353,6 +358,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE5978CE213EF07500B562E3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE517BB021359E72004C1A00 /* Sources */ = {
