@@ -11,12 +11,20 @@
 @interface ViewController : UIViewController
 
 - (IBAction)Play:(id)sender;
-    
+
 @property (weak, nonatomic) IBOutlet UITextField *label;
 @property (weak, nonatomic) IBOutlet UITextField *textfield;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 
+/*!
+ * @discussion Method when value change
+ * @param sender object
+ */
 - (IBAction)ValueChange:(id)sender;
+/*!
+ * @discussion Method view in change
+ * @param sender object
+ */
 - (IBAction)editinChanged:(id)sender;
 
 @end
